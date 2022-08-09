@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 function SearchForm({ handleFormData }) {
 
   const [formData, setFormData] = useState({
@@ -63,4 +64,7 @@ function SearchForm({ handleFormData }) {
   )
 }
 
+SearchForm.propTypes = {
+  handleFormData: PropTypes.func,
+}
 export default SearchForm;

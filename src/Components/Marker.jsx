@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Card from 'react-bootstrap/Card';
+import PropTypes from 'prop-types';
 const Marker = ({ title, display_name, label }) => {
 
     const [isShown, setIsShown] = useState(false)
@@ -26,5 +27,10 @@ const Marker = ({ title, display_name, label }) => {
         </div>
     )
 }
+Marker.propTypes = {
+    title: PropTypes.string, 
+    display_name: PropTypes.string,
+    label: PropTypes.string
+}
 
-export default Marker
+export default Marker;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
+import PropTypes from 'prop-types';
 export default function Map({ jobs }){
   const [currentLocation, setCurrentLocation] = useState({
       longitude: "",
@@ -55,3 +56,6 @@ export default function Map({ jobs }){
   );
 }
 
+Map.propTypes = {
+  optionalArray: PropTypes.array
+}

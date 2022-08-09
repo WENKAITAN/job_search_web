@@ -45,9 +45,8 @@ function App() {
     return <h1>Fetch Data Error</h1>
   }
 
-
   return (
-    <div className="heading">
+    <div>
       <SearchForm handleFormData={handleFormData} />
       <Map jobs={jobs}/>
     </div>
