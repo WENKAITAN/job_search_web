@@ -11,6 +11,7 @@ export default function Map({ jobs }){
     zoom: 12
   };
 
+  // I was gonna use this to update the center of map, but it seems like it is not working
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function(position) {
         setCurrentLocation({
